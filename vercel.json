@@ -4,10 +4,11 @@
   "framework": null,
   "functions": {
     "api/server.mjs": {
-      "runtime": "nodejs20.x"
+      "includeFiles": "dist/server/**"
     }
   },
   "rewrites": [
-    { "source": "/((?!assets/|favicon\\.ico).*)", "destination": "/api/server" }
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/(.*)", "destination": "/api/server" }
   ]
 }
