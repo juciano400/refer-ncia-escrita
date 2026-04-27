@@ -106,10 +106,11 @@ function Index() {
                 <a href="#metodologia">Nossa metodologia</a>
               </Button>
             </div>
-            <div className="mt-12 sm:mt-14 grid grid-cols-3 gap-4 sm:gap-10 max-w-lg mx-auto lg:mx-0 text-xs sm:text-sm text-muted-foreground">
-              <div><div className="font-serif text-2xl sm:text-3xl text-[var(--ink)]">+10</div>anos de experiência</div>
-              <div className="border-l border-border pl-4 sm:pl-0 sm:border-0"><div className="font-serif text-2xl sm:text-3xl text-[var(--ink)]">900+</div>alunos formados</div>
-              <div className="border-l border-border pl-4 sm:pl-0 sm:border-0"><div className="font-serif text-2xl sm:text-3xl text-[var(--ink)]">980</div>nota ENEM</div>
+            <div className="mt-12 sm:mt-14 flex justify-center lg:justify-start">
+              <div className="text-xs sm:text-sm text-muted-foreground">
+                <div className="font-serif text-2xl sm:text-3xl text-[var(--ink)]">980</div>
+                nota máxima ENEM
+              </div>
             </div>
           </div>
 
@@ -168,7 +169,7 @@ function Index() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
             {[
-              { icon: GraduationCap, tag: "ENEM & Vestibulares", title: "Redação ENEM", desc: "Domínio das 5 competências, repertório sociocultural curado e simulados corrigidos pela banca interna.", items: ["Aulas semanais ao vivo", "Banco de propostas inéditas", "Correção em até 72h"] },
+              { icon: GraduationCap, tag: "ENEM & Vestibulares", title: "Redação ENEM", desc: "Imersão profunda nas 5 competências do ENEM: domínio da norma culta, compreensão da proposta, argumentação consistente, coesão textual e proposta de intervenção. Correção minuciosa, competência por competência, com devolutiva escrita e comentada.", items: ["Correção detalhada nas 5 competências", "Monitorias semanais individuais", "Repertório sociocultural curado", "Simulados com banca interna", "Acompanhamento até o dia do exame"] },
               { icon: BookOpen, tag: "Ensino Fundamental", title: "Linguagens Fund. II", desc: "Base sólida em interpretação, gramática aplicada e produção textual para alunos do 6º ao 9º ano.", items: ["Leitura orientada", "Oficinas de escrita criativa", "Acompanhamento pedagógico"] },
               { icon: Sparkles, tag: "Capacitações", title: "Capacitação Docente", desc: "Formação continuada para professores que desejam ensinar redação com método e propósito.", items: ["Trilha modular", "Material exclusivo", "Certificação Referência"] },
             ].map((c) => (
