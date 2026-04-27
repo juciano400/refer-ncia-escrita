@@ -2,8 +2,6 @@
 // (exported by dist/server/server.js) to Node's (req, res) signature.
 import server from "../dist/server/server.js";
 
-export const config = { runtime: "nodejs20.x" };
-
 export default async function handler(req, res) {
   const protocol = req.headers["x-forwarded-proto"] || "https";
   const host = req.headers["x-forwarded-host"] || req.headers.host;
